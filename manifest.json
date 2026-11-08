@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Compact Window",
+  "version": "1.0.0",
+  "description": "ボタンを押したウィンドウだけ、タブバーとアドレスバーを隠したコンパクト表示に切り替える",
+  "permissions": ["storage", "contextMenus", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "このウィンドウをコンパクト表示にする"
+  },
+  "commands": {
+    "toggle-compact": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "コンパクト表示の切り替え"
+    }
+  }
+}
